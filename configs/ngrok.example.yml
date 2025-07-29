@@ -1,5 +1,4 @@
-# authtoken: YOUR_NGROK_AUTH_TOKEN
-authtoken: 1PEAlB7JmxBgT1giQsWq41M8uUU_2g7d3PMoXBTTiAAkwmbSK
+authtoken: YOUR_AUTH_TOKEN
 version: 2
 tunnels:
   mc-java:

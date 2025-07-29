@@ -1,4 +1,12 @@
 #!/bin/sh
+############################################
+#   MINECRAFT DOCKER COMPOSE SCRIPT
+# ------------------------------------------
+#   Dibuat oleh: Muhammad Yudha Abhista (@Yusta)
+#   Butuh hosting cepat? Tanpa ribet?
+#   https://raznar.id
+############################################
+
 cd /app
 EULA_FILE="/app/eula.txt"
 
