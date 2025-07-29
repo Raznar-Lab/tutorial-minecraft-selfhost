@@ -8,9 +8,5 @@ echo "#   Butuh hosting cepat? Tanpa ribet?"
 echo "#   https://raznar.id"
 echo "############################################"
 
-docker compose down
-echo "🚀 Menjalankan Minecraft Server dengan Docker Compose..."
-docker compose up -d
-sleep 7.5
-docker compose logs --tail=10 ngrok
+docker compose logs --tail=50 minecraft
 docker compose attach minecraft

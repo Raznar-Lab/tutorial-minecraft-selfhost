@@ -8,13 +8,5 @@ echo #   Butuh hosting cepat? Tanpa ribet?
 echo #   https://raznar.id
 echo ############################################
 
-docker compose down
-echo Starting Minecraft server...
-docker compose up -d
-sleep 7.5
-docker compose logs --tail=10 ngrok
-echo Attaching to Minecraft container...
+docker compose logs --tail=50 minecraft
 docker compose attach minecraft
-
-echo Cleanup complete.
-pause
