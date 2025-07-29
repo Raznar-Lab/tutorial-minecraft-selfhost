@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: eclipse-temurin:21-jdk-alpine
+    ports:
+      - 25565:25565
+    entrypoint: "/entrypoint.sh"
+    volumes:
+      - ./app:/app
+      - ./scripts/minecraft/entrypoint.sh:/entrypoint.sh
+
+  ngrok:
+    image: ngrok/ngrok:alpine
+    command: ["start", "--config", "/etc/ngrok.yml", "--all"]
+    depends_on:
+      - minecraft
+    volumes:
+      - ./configs/ngrok.yml:/etc/ngrok.yml

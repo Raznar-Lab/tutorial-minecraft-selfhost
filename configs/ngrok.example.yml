@@ -1,0 +1,10 @@
+# authtoken: YOUR_NGROK_AUTH_TOKEN
+authtoken: 1PEAlB7JmxBgT1giQsWq41M8uUU_2g7d3PMoXBTTiAAkwmbSK
+version: 2
+tunnels:
+  mc-java:
+    addr: minecraft:25565
+    proto: tcp
+
+log: stdout
+log_level: info
